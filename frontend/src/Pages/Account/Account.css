@@ -1,0 +1,214 @@
+body{
+    background-color: #eef2f9;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* // loginPage */
+
+.loginPage{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginPage .main{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+.loginPage .main .left{
+    flex-basis: 45%;
+}
+.loginPage .main .left p{
+    text-align: center;
+    font-family: "Outfit";
+    font-size: 18px;
+    max-width: 500px;
+    position: relative;
+    top: -30px;
+}
+.loginPage .main form {
+    flex-basis: 55%;
+    border: 5px solid white;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.loginPage .main input {
+    width: 100%;
+    padding: 10px;
+    outline: 1px solid gray;
+    border: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.loginPage .main p {
+    text-align: center;
+    margin-top: 10px;
+}
+.loginPage .main hr {
+    border: 1px solid #dadde1;
+    outline: none;
+    margin: auto;
+    width: 80%;
+    margin-left: 15%;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+.btn-new-acc{
+    border: 0;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #42b72a;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media (max-width : 900px) {
+    .loginPage{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .loginPage .main .left p{
+        width: 100%;
+    }
+    .loginPage .main{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 600px) {
+    .loginPage .main .left img{
+        max-width: 400px;
+    }
+    .loginPage .main .left p{
+        font-size: 16px;
+        max-width: 400px;
+        position: relative;
+        top: -30px;
+    }
+}
+
+/* // signup page  */
+
+.signUp{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.signUp .main img{
+    width: 300px;
+}
+.signUp .main form {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 600px;
+}
+.signUp .main form h1{
+    text-align: center;
+}
+.signUp .main form p{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.signUp .main hr {
+    border: 1px solid #dadde1;
+    outline: none;
+    margin: auto;
+    width: 80%;
+    margin-left: 15%;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+.signUp .main .names{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.signUp .main .names input{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid grey;
+    outline: 1px solid grey;
+}
+.signUp .main .otherInfo{
+    margin-top: 15px;
+}
+.signUp .main .otherInfo span{
+    font-size: 13px;
+    color: gray;
+}
+.signUp .main .otherInfo .selection {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.signUp .main .otherInfo .selection select{
+    width: 100%;
+    border: 1px solid grey;
+    outline: 1px solid grey;
+}
+.signUp .main .otherInfo .selection .option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid grey;
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+.signUp .main input{
+    width: 100%;
+    margin-top: 15px;
+    height: 33px;
+    padding: 10px;
+    outline: none;
+}
+.signUp .main p{
+    max-width: 400px;
+    text-align: left;
+    color: grey;
+    font-size: 13px;
+}
+#route{
+    font-size: 16px;
+    text-decoration: underline;
+    margin-top: 10px;
+    color: blueviolet;
+}
+
+@media (max-width : 550px) {
+    .signUp .main{
+        padding: 10px;
+    }
+    .signUp .main form {
+        max-width: 400px;
+        overflow: hidden;
+    }
+    .signUp .main .otherInfo .selection .option{
+        gap: 10px;
+        border: 1px solid grey;
+        padding: 5px 20px;
+        border-radius: 5px;
+    }
+}

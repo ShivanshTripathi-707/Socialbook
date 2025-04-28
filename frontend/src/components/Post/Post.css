@@ -1,0 +1,62 @@
+.post{
+    margin-top: 20px;
+}
+.post .mypost{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+    background-color: white;
+    padding: 20px;
+}
+.post .identity{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post .identity img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.post .identity .data {
+    color: black;
+    margin-left: 10px;
+}
+.post .identity .data h2{
+    font-weight: 500;
+}
+.post .identity .data p{
+   color: gray;
+}
+.post .post-data{
+    margin-top: 15px;
+    color: black;
+}
+.post .post-data p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 800px;
+}
+.post .post-data img{
+    margin-top: 15px;
+    width: 100%;
+}
+
+.icons_tools{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.icons_tools .myTool{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.icons_tools .myTool img{
+    width: 30px;
+    cursor: pointer;
+}
+.icons_tools .myTool p{
+    margin-top: 15px;
+}
